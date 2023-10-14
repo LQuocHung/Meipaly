@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1rem 0;
+  border-bottom: 1px solid black;
+}
+
+.header__content .brand {
+  text-decoration: none;
+}
+
+.header__content .brand i,
+.header__content .brand span {
+  font-size: 2rem;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+.header__content nav {
+  margin-left: auto;
+}
+
+.header__content nav ul {
+  list-style: none;
+}
+
+.header__content nav ul li {
+  display: inline;
+  margin-left: 30px;
+}
+
+.header__content nav ul li a {
+  text-decoration: none;
+  /* color:white; */
+  transition: all 0.5s;
+}
+
+.header__content nav ul li.active a {
+  color: red;
+}
+
+.header__content nav ul li:hover a {
+  color: red;
+}
+
+#carousel {
+  background-position: center;
+  background-image: url(./../img/home_slider.jpg);
+  background-size: cover;
+  height: 700px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__content {
+  text-align: center;
+  color: white;
+}
+
+.carousel__content p {
+  font-size: 1rem;
+}
+
+.carousel__content h1 {
+  font-size: 4rem;
+}
+
+.carousel__content button {
+  background: red;
+  padding: 15px 30px;
+  color: white;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.carousel__content .arrow__down {
+    margin-top: 1rem;
+}
+
+.carousel__content .arrow__down i{
+    font-size: 1.5rem;
+}
