@@ -13,11 +13,14 @@
 
 header {
   padding: 1rem 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ffffff4d;
+  position: absolute;
+  width: 100%;
 }
 
 .header__content .brand {
   text-decoration: none;
+  color: white;
 }
 
 .header__content .brand i,
@@ -45,7 +48,7 @@ header {
 
 .header__content nav ul li a {
   text-decoration: none;
-  /* color:white; */
+  color: white;
   transition: all 0.5s;
 }
 
@@ -86,12 +89,83 @@ header {
   color: white;
   border: 1px solid red;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .carousel__content .arrow__down {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
-.carousel__content .arrow__down i{
-    font-size: 1.5rem;
+.carousel__content .arrow__down i {
+  font-size: 1.5rem;
+}
+
+.carousel__content button:hover {
+  background-color: #af2239;
+}
+
+/* Services */
+
+#service {
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.service__title{
+  text-align: center;
+}
+
+.service__title .text {
+  color: red;
+  font-weight: 100;
+}
+
+.service__title .text__1 {
+  color: gray;
+  font-weight: 500;
+}
+
+.service__title h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.service__content{
+  padding-top: 2rem;
+}
+
+.list__service{
+  display: flex;
+  justify-content: center;
+}
+
+.item__service{
+  background-color: white;
+  color: gray;
+  padding: 4.5rem;
+  margin: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.item__service i{
+font-size: 3rem;
+}
+
+.item__service::after{
+  content: "";
+    width: 5px;
+    display: block;
+    height: 0;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    transition: all 0.5s;
+}
+
+.item__service:hover::after{
+  height: 100%;
 }
