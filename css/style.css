@@ -286,3 +286,86 @@ header {
 .blog__overlay-text h3 {
   color: white;
 }
+
+
+/* statistical */
+
+#statistical{
+  background-color: black;
+  padding: 80px;
+}
+
+.statistical__content{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#statistical .item{
+  text-align: center;
+}
+
+#statistical .item p {
+  font-size: 3.5rem;
+  color: white;
+}
+
+#statistical .item h3{
+  font-size: 1.2rem;
+  color: gray;
+  font-weight: 400;
+}
+
+#digital{
+  background-image: url(./../img/bussiness_img_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.digital__content video{
+  width: 100%;
+}
+
+#contact .title h1{
+  color: black;
+}
+
+.contact__content{
+  display: flex;
+}
+
+.contact__map{
+  width: 60%;
+}
+
+.contact__form{
+  width: 40%;
+  padding-left: 1rem;
+ 
+}
+
+.contact__form form{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form form input,
+.contact__form form textarea{
+  padding: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.contact__form form input[type="button"]{
+  margin-bottom: 0;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.contact__form form input[type="button"]:hover{
+  background-color: #af2239;
+  border-color: #af2239;
+}
