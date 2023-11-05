@@ -25,6 +25,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -125,7 +130,7 @@
     <section id="blog" class="container py-100">
       <div class="title">
         <p class="text">OUR NEWS & ARTICLES</p>
-        <h1>LATEST BLOG POSTS</h1>
+        <h1 class=" wow animate__animated animate__heartBeat">LATEST BLOG POSTS</h1>
         <p class="text__1">
           We are committed to providing our customers with exceptional service
           while offering our <br />
@@ -402,6 +407,13 @@
     <!-- Footer -->
     <footer></footer>
 
+
+    <div class="squase"></div>
+
+    <a href="#" class="back_to_top cd-top text-replace js-cd-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -440,5 +452,13 @@
     <script>
       $(".counter").countUp();
     </script>
+
+    <script src="./libs/wowjs/wow.min.js"></script>
+    <script>
+      new WOW().init();
+      </script>
+
+      <script src="./libs/backtotop/js/util.js"></script>
+      <script src="./libs/backtotop/js/main.js"></script>
   </body>
 </html>
